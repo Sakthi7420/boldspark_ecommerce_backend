@@ -11,9 +11,9 @@ const cartRoutes = require('./routes/cartRoutes');
 
 const app = express();
 app.use(cors({
-    origin: 'http://localhost:3000', 
+    origin: 'https://boldspark-ecommerce-frontend-28f6l6wro.vercel.app', 
     credentials: true,
-    allowedHeaders: 'Content-Type,Authorization'
+    allowedHeaders: ['Content-Type,Authorization']
   }));
 
 app.use(express.json());
